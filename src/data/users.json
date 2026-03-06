@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Ben",
+    "email": "ben45@gmail.com",
+    "password": "567",
+    "savedLocations": [
+      {
+        "city": "Buffalo Grove",
+        "country": "United States"
+      },
+      {
+        "city": "Miami",
+        "country": "United States"
+      }
+    ]
+  },
+  {
+    "name": "Rachel",
+    "email": "rav@yahoo.com",
+    "password": "123",
+    "savedLocations": [
+      {
+        "city": "Tashkent",
+        "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "name": "Daniel",
+    "email": "dgar@spotify.com",
+    "password": "678"
+  }
+]

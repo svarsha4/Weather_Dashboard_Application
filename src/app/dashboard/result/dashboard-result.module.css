@@ -1,0 +1,112 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f3c88, #3b5998);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.card h1 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #1f3c88;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.backButton {
+  margin-top: 15px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  background: white;
+  border: 2px solid #0070f3;
+  border-radius: 6px;
+
+  padding: 6px 10px;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.backButton:hover {
+  background: #f1f4ff;
+}
+
+.bookmark {
+  margin-top: 20px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+}
+
+.saved {
+  color: #1f3c88;
+}
+
+.forecastList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.forecastItem {
+  background: #f5f7fb;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  font-size: 16px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.date {
+  font-weight: 600;
+  color: #333;
+}
+
+.temp {
+  color: #1f3c88;
+  font-weight: 500;
+}
+
+.message {
+  color: white;
+  font-size: 18px;
+}
