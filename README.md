@@ -89,6 +89,7 @@ typing a given country and given city.
   - src/data/users.json - Stores User Info
 
 - **API Routes**:
+
   ***The API routing associated with the Weather Forecast API and the Nominatim API is integrated directly into the Weather Search Page and Weather Dashboard Page***
   - src/app/api/auth/login/route.js - Login Page
   - src/app/api/auth/signup/route.js - Signup Page
@@ -97,6 +98,7 @@ typing a given country and given city.
   - src/app/api/save/get-saved-result/route.js - Retrieves the saved user's search result
 
 - **Weather Icons**:
+
   ***Used Flaticon to get the weather icons***
   - public/weather-icons/sunny.png - Sunny Weather
   - public/weather-icons/cloudy.png - Cloudy Weather
