@@ -3,7 +3,6 @@
 import { useRouter } from 'next/navigation';
 
 import styles from './login.module.css';
-import Link from 'next/link';
 import { useState } from 'react';
 
 export default function LoginPage() {
@@ -116,6 +115,40 @@ export default function LoginPage() {
         emailInvalid: !formData.email,
         passwordInvalid: !formData.password,
       });
+      return;
+    }
+
+    // Ensures the user entered the correct credentials before deleting their account
+    const response = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      if (data.errorType === "EMAIL_NOT_FOUND") {
+        setErrors({
+          emailMessage: "The email is invalid",
+          passwordMessage: "",
+          generalMessage: "",
+          emailInvalid: true,
+          passwordInvalid: false,
+        });
+        return;
+      }
+
+      if (data.errorType === "INVALID_PASSWORD") {
+        setErrors({
+          emailMessage: "",
+          passwordMessage: "The password is invalid",
+          generalMessage: "",
+          emailInvalid: false,
+          passwordInvalid: true,
+        });
+        return;
+      }
       return;
     }
     setShowDeleteModal(true);

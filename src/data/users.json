@@ -7,10 +7,6 @@
       {
         "city": "Buffalo Grove",
         "country": "United States"
-      },
-      {
-        "city": "Miami",
-        "country": "United States"
       }
     ]
   },
@@ -29,5 +25,24 @@
     "name": "Daniel",
     "email": "dgar@spotify.com",
     "password": "678"
+  },
+  {
+    "name": "Daniel",
+    "email": "dgarcia@spotify.com",
+    "password": "678$",
+    "savedLocations": [
+      {
+        "city": "Odesa",
+        "country": "Ukraine"
+      },
+      {
+        "city": "Aswan",
+        "country": "Egypt"
+      },
+      {
+        "city": "Johor Bahru",
+        "country": "Malaysia"
+      }
+    ]
   }
 ]

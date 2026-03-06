@@ -66,7 +66,6 @@ typing a given country and given city.
   - npm install react-icons (For Better UI)
 
 - **Run your web application**:
-  - cd project-name (e.g. project-name = weather-dashboard)
   - npm run dev
     - use the http://localhost:3000/login url
 
@@ -90,7 +89,7 @@ typing a given country and given city.
   - src/data/users.json - Stores User Info
 
 - **API Routes**:
-  - ***The API routing associated with the Weather Forecast API and the Nominatim API is integrated directly into the Weather Search Page and Weather Dashboard Page***
+  ***The API routing associated with the Weather Forecast API and the Nominatim API is integrated directly into the Weather Search Page and Weather Dashboard Page***
   - src/app/api/auth/login/route.js - Login Page
   - src/app/api/auth/signup/route.js - Signup Page
   - src/app/api/auth/delete/route.js - Deletes Given User Info
@@ -98,7 +97,7 @@ typing a given country and given city.
   - src/app/api/save/get-saved-result/route.js - Retrieves the saved user's search result
 
 - **Weather Icons**:
-  - ***Used Flaticon to get the weather icons***
+  ***Used Flaticon to get the weather icons***
   - public/weather-icons/sunny.png - Sunny Weather
   - public/weather-icons/cloudy.png - Cloudy Weather
   - public/weather-icons/sunny-cloudy.png - Partly Sunny and Partly Cloudy Weather
